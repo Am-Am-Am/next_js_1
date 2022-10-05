@@ -1,0 +1,88 @@
+.input[type="checkbox"]:checked, 
+.input[type="checkbox"]:not(:checked)
+{
+    position: absolute;
+    left: -9999px;
+}
+
+.input[type="checkbox"]:checked + label, 
+.input[type="checkbox"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.input[type="checkbox"]:checked + label:before, 
+.input[type="checkbox"]:not(:checked) + label:before
+ {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #828282;
+    background-color: #ffffff;
+}
+
+.input[type="checkbox"]:checked:not(:disabled):hover + label:before, 
+.input[type="checkbox"]:not(:checked):hover:not(:disabled) + label:before
+ {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #00EAD9;
+    background-color: #ffffff;
+}
+
+.input[type="checkbox"]:checked:disabled + label:before, 
+.input[type="checkbox"]:not(:checked):disabled + label:before
+ {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #c4c4c4;
+    background-color: #ffffff;
+}
+
+
+.input[type="checkbox"]:checked + label:before, 
+.input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
+
+.input[type="checkbox"]:checked + label:after, 
+.input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    background-color: #00EAD9;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0px;
+    border-radius: 2px;
+    border: 1px solid #00EAD9;
+    background-image: url('../public/img/Group\ 1.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.input[type="checkbox"]:not(:checked) + label:after{
+    opacity: 0;
+}
+
+.input[type="checkbox"]:checked + label:after
+{
+    opacity: 1;
+}
+
+

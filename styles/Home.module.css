@@ -1,0 +1,18 @@
+.container {
+  padding: 20px 120px 0 120px;
+}
+
+.button{
+  display: flex;
+  margin-top: 50px;
+}
+
+.radio{
+  display: flex;
+  flex-direction: column;;
+  margin-top: 50px;
+}
+
+.check{
+  margin-top: 50px;
+}
